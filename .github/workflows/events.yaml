@@ -6,7 +6,7 @@ jobs:
     steps:
        - name: install 
          run: |
-            sudo spt update
+            sudo apt update
             sudo apt install openjdk-17-jdk -y
        - name: verify
          run: java -version    
