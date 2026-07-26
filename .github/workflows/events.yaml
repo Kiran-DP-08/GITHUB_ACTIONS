@@ -3,7 +3,7 @@ on: push
 jobs:
   print-ubuntu:
     runs-on: ubuntu-latest
-    steps: |
-      - name: Show-os
-        run: echo "this is running on ubuntu"
-        run: echo "runner os: $runner_os"
+    steps:
+        run: |
+             echo "this is running on ubuntu"
+             echo "runner os: $runner_os"
