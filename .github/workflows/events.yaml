@@ -4,6 +4,6 @@ jobs:
   print-ubuntu:
     runs-on: ubuntu-latest
     steps:
-        run: |
+       - run: |
              echo "this is running on ubuntu"
              echo "runner os: $runner_os"
