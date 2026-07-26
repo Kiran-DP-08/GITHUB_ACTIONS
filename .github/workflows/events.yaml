@@ -1,9 +1,13 @@
-name: checkout
+name: java
 on: push
 jobs:
-   build:
+   java:
     runs-on: ubuntu-latest
     steps:
-       - name: checkout 
-         uses: actions/checkout@v7.0.1
+       - name: install 
+         run: |
+            sudo spt update
+            sudo apt install openjdk-17-jdk -y
+       - name: verify
+         run: java -version    
   
