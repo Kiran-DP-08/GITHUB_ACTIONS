@@ -1,7 +1,7 @@
 name: python
 on: push
 jobs:
-   java:
+   Python:
     runs-on: ubuntu-latest
     steps:
        - name: Setup Python
