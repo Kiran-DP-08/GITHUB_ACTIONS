@@ -7,3 +7,9 @@ jobs:
        - run: |
              echo "this is running on ubuntu"
              echo "runner os: $runner_os"
+  print-windows:
+    runs-on: windows-latest
+    steps:
+       - run: |
+            echo "this is running on windows"
+            echo "runner os: $runner_os"      
